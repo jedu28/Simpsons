@@ -170,9 +170,9 @@ def repetidos_ou_pred(text):
     else:
         prep = preprocessing(text)
         result = pred_1(prep,classifier)
-        st.success('Who says?\n\n {}'.format(result))
-        st.image(show(result)) 
-        return(result)
+    st.success('Who says?\n\n {}'.format(result))
+    st.image(show(result)) 
+    return(result)
     
 
 
