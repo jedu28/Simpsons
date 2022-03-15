@@ -165,13 +165,13 @@ def pred_1(words,pipe):
 def repetidos_ou_pred(text):
     result= ""
     if(text in str (data["spoken_words"]) ):
-        result = data[(data.spoken_words == text)].character_name.values[0]
+        result = str(data[(data.spoken_words == text)].character_name.values[0])
         st.success('Who says?\n\n {}'.format(result))
         st.image(show(result))  
         return(result)
         
     if(text in str(data_2["spoken_words"])):
-        result = data_2[(data_2.spoken_words == text)].character_name.values[0]
+        result = str(data_2[(data_2.spoken_words == text)].character_name.values[0])
         st.success('Who says?\n\n {}'.format(result))
         st.image(show(result))  
         return(result)
