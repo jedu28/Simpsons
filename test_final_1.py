@@ -16,7 +16,7 @@ import pandas as pd
 import string
 from stop_words import get_stop_words
 import spacy
-from flask import Flask,request,render_template,make_response
+
 from PIL import Image
 import urllib.request
 from PIL import Image
