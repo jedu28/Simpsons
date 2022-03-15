@@ -163,15 +163,18 @@ def pred_1(words,pipe):
 
 
 def repetidos_ou_pred(text):
-    if(text in data.spoken_words):
+    result= ""
+    if(text in str (data["spoken_words"]) ):
         result = data.loc[(data.spoken_words == text),["character_name"]]
-    if(text in data_2.spoken_words):
-        result = data_2.loc[(data.spoken_words == text),["character_name"]]
-    else:
+        
+    if(text in str(data_2["spoken_words"])):
+        result = data_2.loc[(data_2.spoken_words == text),["character_name"]]
+        
+    else: 
         prep = preprocessing(text)
         result = pred_1(prep,classifier)
     st.success('Who says?\n\n {}'.format(result))
-    st.image(show(result)) 
+    st.image(show(result))  
     return(result)
     
 
