@@ -77,8 +77,6 @@ pydantic==1.8.2
 Pygments==2.11.2
 pyparsing==3.0.7
 pyrsistent==0.18.1
-python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
-pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1633452062248/work
 pywin32==303
 pywinpty==1.1.6
 pyzmq==22.3.0
@@ -87,7 +85,6 @@ scikit-learn==1.0.2
 scipy==1.8.0
 seaborn==0.11.2
 Send2Trash==1.8.0
-six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
 sklearn==0.0
 smart-open==5.2.1
 sniffio==1.2.0
