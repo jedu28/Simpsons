@@ -164,7 +164,7 @@ def pred_1(words,pipe):
 
 def repetidos_ou_pred(text):
     result= ""
-    if(text in str (data["spoken_words"]) ):
+    if(text in str(data["spoken_words"]) ):
         result = str(data[(data.spoken_words == text)].character_name.values[0])
         st.success('Who says?\n\n {}'.format(result))
         st.image(show(result))  
@@ -176,7 +176,7 @@ def repetidos_ou_pred(text):
         st.image(show(result))  
         return(result)
         
-    else: 
+     else: 
         prep = preprocessing(text)
         result = pred_1(prep,classifier)
         st.success('Who says?\n\n {}'.format(result))
